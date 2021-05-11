@@ -1,0 +1,14 @@
+<div class="header">
+    <app-logo></app-logo>
+
+    <div class="wrap" *ngIf="isAuthenticated()">  
+        <div class="search">
+           <input type="text" [(ngModel)]="searchText" class="searchTerm" placeholder="What are you looking for?">
+           <button type="submit" class="searchButton" (click)="search(searchText)">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+     </div>
+
+    <app-navigation></app-navigation>
+</div>

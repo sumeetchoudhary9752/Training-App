@@ -1,0 +1,79 @@
+.landingPage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline: 3em;
+    background-image: linear-gradient(45deg, black, transparent);
+}
+
+/* @media screen and (max-width:715px ) {
+    .landingPage {
+        margin-top: 2em;
+        flex-direction: column-reverse;
+    }
+    .signupForm {
+        width: 20em;
+    }
+} */
+
+.signupForm {
+    width: 30em;
+    height: 30em;
+    /* border: 2px solid cadetblue; */
+    /* border-radius: 10px; */
+    align-items: center;
+    padding: 2em;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    display: flex;
+    justify-content: center;
+}
+
+.signupForm form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.inputField {
+    width: 100%;
+    
+}
+
+.inputField input {
+    height: 2.5em;
+    margin-bottom: 1em;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding-left: .5em;
+}
+
+.inputField label {
+    font-size: unset;
+    margin-bottom: .2em;
+}
+
+
+
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    margin: auto;
+    margin-top: 1em;
+    width: 40%;
+    height: 3em;
+    background-color: inherit;
+    cursor: pointer;
+    /* border: 1px solid cadetblue;
+    border-radius: 5px;
+    color: cadetblue; */
+    font-weight: bolder;
+}
+
+.buttons button:hover {
+    background-color: rgb(133, 55, 50);
+    color: white;
+    transition: .5s;
+}

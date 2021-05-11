@@ -1,0 +1,28 @@
+<div class="landingPage">
+    <!-- <app-landing></app-landing> -->
+    <div class="signupForm">
+        
+        <form class="inputField" (ngSubmit)="signup()" #f="ngForm">
+            <strong style="font-size: x-large;">Register User</strong>
+            <br>
+            <label>Your email address</label>
+            <input type="text" placeholder="Enter Email" [pattern]="emailPattern" [(ngModel)]="email" name="email" email ngModel #emailRef="ngModel"required />
+            <span style="color: #fbff01;" class="help-block" *ngIf="!emailRef.valid && emailRef.touched">Please enter a valid email</span>
+
+            <label>Your password</label>
+            <input type="password"placeholder="Enter Password" [(ngModel)]="password" name="password" required ngModel #pass="ngModel" />
+            <span style="color: #fbff01;" class="help-block" *ngIf="!pass.valid && pass.touched">Please enter password</span>
+            
+            <div class="buttons">
+                
+                <button type="submit" >
+                    Signup
+                </button>
+            </div>
+            
+        </form>
+        
+    </div>
+</div>
+
+

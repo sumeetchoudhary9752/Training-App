@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.logo {
+    /* font-family: 'Londrina Solid', cursive; */
+    cursor: pointer;
+    color: #6d4242;
+    text-decoration: none;
+    font-size: .8em;
+}
+
