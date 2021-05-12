@@ -1,6 +1,5 @@
 <div class="header">
     <app-logo></app-logo>
-
     <div class="wrap" *ngIf="isAuthenticated()">  
         <div class="search">
            <input type="text" [(ngModel)]="searchText" class="searchTerm" placeholder="What are you looking for?">
@@ -9,6 +8,6 @@
           </button>
         </div>
      </div>
-
     <app-navigation></app-navigation>
+<strong>{{calendar | date:"fullDate"}}</strong>
 </div>

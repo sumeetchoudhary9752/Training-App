@@ -34,6 +34,8 @@ import { ReactiveFormsModule } from '@angular/forms'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { FooterComponent } from './components/footer/footer.component';
+import { DatePipe } from '@angular/common';
+import { AlbumComponent } from './components/album/album.component';
 
 export function playerFactory() {
   return player;
@@ -58,6 +60,7 @@ export function playerFactory() {
     LoadingChartComponent,
     ClickLottieComponent,
     FooterComponent,
+    AlbumComponent,
   ],
   imports: [
     BrowserModule,
@@ -79,7 +82,8 @@ export function playerFactory() {
     AngularFirestore,
     LoginActivate,
     AuthService,
-    LoginGuard
+    LoginGuard,
+    DatePipe
   ],
   bootstrap: [AppComponent]
 })

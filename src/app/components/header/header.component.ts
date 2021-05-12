@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/service/auth.service';
 
@@ -8,10 +9,12 @@ import { AuthService } from 'src/app/service/auth.service';
 })
 export class HeaderComponent implements OnInit {
   searchText: string= "";
+  calendar: any;
 
-  constructor(public authService: AuthService) { }
+  constructor(public authService: AuthService,private datePipe: DatePipe) { }
 
   ngOnInit(): void {
+    this.calendar = this.datePipe.transform(new Date());
   }
 
   isAuthenticated(){
@@ -22,4 +25,5 @@ export class HeaderComponent implements OnInit {
     console.log(searchText);
   }
   
+
 }

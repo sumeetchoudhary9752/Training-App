@@ -1,11 +1,12 @@
 .site-footer
 {
-  background-color:#26272b;
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
-  color:#737373;
+    background-color: lightgrey;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #320c5aed;
 }
+
 .site-footer hr
 {
   border-top-color:#bbb;
@@ -17,12 +18,14 @@
 }
 .site-footer h6
 {
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
+    color: #130b0b;
+    font-size: larger;
+    text-transform: uppercase;
+    margin-top: -20px;
+    letter-spacing: 2px;
+    margin-left: 600px;
 }
+
 .site-footer a
 {
   color:#737373;
@@ -136,7 +139,7 @@
   width:34px;
   font-size:14px
 }
-.social-icons a.facebook:hover
+/* .social-icons a.facebook:hover
 {
   background-color:#3b5998
 }
@@ -147,7 +150,7 @@
 .social-icons a.linkedin:hover
 {
   background-color:#007bb6
-}
+} */
 .social-icons a.dribbble:hover
 {
   background-color:#ea4c89
