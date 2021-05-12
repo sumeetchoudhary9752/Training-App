@@ -4,7 +4,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    border: 1px solid cadetblue;
+    border: 1px solid rgb(2, 3, 3);
     border-radius: 10px;
     height: 4em;
     margin-inline: 2em;
@@ -15,5 +15,5 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 3px 10px 0px;
 }
 .photo {
-    margin-right: 1em;
+    margin-right: 8em;
 }

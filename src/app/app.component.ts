@@ -24,14 +24,8 @@ export class AppComponent {
   email!: string;
   password!: string;
 
-  constructor(public authService: AuthService, router: Router) {
-    
+  constructor(public authService: AuthService, router: Router) {   
   }
-
-  
-
-  
-
   logout() {
     this.authService.logout();
   }

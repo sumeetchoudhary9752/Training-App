@@ -13,11 +13,11 @@ import { AnimationOptions } from 'ngx-lottie';
 export class ClickLottieComponent implements OnInit {
 
   options: AnimationOptions = {
-    path: '/assets/click_lottie.json',
+    path: '/assets/Arrow-left.json',
   }
   styles: Partial<CSSStyleDeclaration> = {
     maxWidth: '50vw',
-    minWidth: '5em',
+    minWidth: '8em',
     margin: '0 auto',
   };
 

@@ -8,8 +8,7 @@
   <div class="navigationMenu" *ngIf="isAuthenticated()">
     <a routerLink="/albums"><button class="navigationButton" >Album</button></a>
     <a routerLink="/posts"><button class="navigationButton" >Posts</button></a>
-    <a routerLink="/users"><button class="navigationButton" >Details</button></a>
-    <!-- <img class="photo" src="../../../assets/images/profilePhoto.png" height="30px"> -->
+    <a routerLink="/users"><button class="navigationButton" >Users</button></a>
     <button class="navigationButton" (click)="logout()">Logout</button>
    
   </div>
@@ -19,7 +18,7 @@
     <div class="mobileMenu" *ngIf="isAuthenticated()">
       <a routerLink="/albums"><button class="navigationButton" >Album</button></a>
       <a routerLink="/posts"><button class="navigationButton" >Posts</button></a>
-      <a routerLink="/users"><button class="navigationButton" >Details</button></a>
+      <a routerLink="/users"><button class="navigationButton" >Users</button></a>
       <button class="navigationButton" (click)="logout()">Logout</button>
       
     </div>

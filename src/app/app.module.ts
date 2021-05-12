@@ -1,4 +1,3 @@
-import { Observable } from 'rxjs';
 import { NgModule, Injectable} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule, LoginActivate } from './app-routing.module';
@@ -16,7 +15,6 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from 'src/environments/environment';
 import { FormsModule } from '@angular/forms';
 import { AuthService, LoginGuard } from './service/auth.service';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { UsersComponent } from './components/users/users.component';
 import { UserCardComponent } from './components/user-card/user-card.component';
@@ -26,8 +24,6 @@ import { SelectedUserComponent } from './components/selected-user/selected-user.
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
 import { LoadingComponent } from './components/loading/loading.component';
-import { LandingComponent } from './components/landing/landing.component';
-import { LoadingChartComponent } from './components/loading-chart/loading-chart.component';
 import { ClickLottieComponent } from './components/click-lottie/click-lottie.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { ReactiveFormsModule } from '@angular/forms'
@@ -49,15 +45,12 @@ export function playerFactory() {
     NavigationComponent,
     LoginFormComponent,
     SignupFormComponent,
-    DashboardComponent,
     PostsComponent,
     UsersComponent,
     UserCardComponent,
     PostCardComponent,
     SelectedUserComponent,
     LoadingComponent,
-    LandingComponent,
-    LoadingChartComponent,
     ClickLottieComponent,
     FooterComponent,
     AlbumComponent,

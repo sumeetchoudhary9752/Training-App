@@ -19,8 +19,8 @@
 
 
 .navigationButton {
-    background-color: inherit;
-    border: none;
+    /* background-color: inherit; */
+    /* border: none; */
     padding: 1em;
     cursor: pointer;
 }
