@@ -23,6 +23,7 @@ export class AuthService {
       .createUserWithEmailAndPassword(email, password)
       .then(value => {
         this.toastr.success('Success','User registered'); 
+        this.router.navigate([""])
       })
       .catch(err => {
         this.toastr.error(err.message)
